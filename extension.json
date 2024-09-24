@@ -1,0 +1,25 @@
+{
+	"name": "Webp Thumbs",
+	"author": [
+		"Richard Todd"
+	],
+	"url": "https://github.com/rwtodd/RWTWebpThumbs.Mediawiki",
+	"descriptionmsg": "webpthumb-desc",
+	"license-name": "MIT",
+	"type": "media",
+	"requires": {
+		"MediaWiki": ">= 1.41",
+		"platform": {
+			"php": ">= 8.1"
+		}
+	},
+	"MediaHandlers": {
+		"image/webp": "RWT\\Extension\\WebPThumb\\RWTWebPHandler",
+		"image/jpeg": "RWT\\Extension\\WebPThumb\\RWTJpegHandler",
+		"image/png": "RWT\\Extension\\WebPThumb\\RWTPngHandler"
+	},
+	"AutoloadNamespaces": {
+		"RWT\\Extension\\WebPThumb\\": "includes/"
+	},
+	"manifest_version": 2
+}
